@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Index: Table of Contents</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+
+<!--<link rel="icon" href="https://discoverthreejs.com/favicon.ico" type="image/x-icon"> -->
+
+    <link href="styles/main.css" rel="stylesheet" type="text/css">    <!--
+
+      Include the main three.js script.
+
+      The global variable THREE will be
+      available for use in any scripts
+      loaded after this one.
+
+    -->
+
+    <script src="js/THREE.js-master/build/three.min.js"></script>
+    <!--
+
+    Include the OrbitControls script.
+
+    This must be included AFTER the three.js script as it
+    needs to use the global THREE variable
+
+  -->
+
+  <script src="js/THREE.js-master/src/examples/js/loaders/GLTFLoader.js"></script>
+  <!--
+
+    Include the GLTFLoader script. This also needs to be loaded after the three.js script
+
+  -->
+
+  <script src="js/THREE.js-master/src/examples/js/controls/OrbitControls.js"></script>
+
+  </head>
+
+  <body>
+
+    <h1><a href="https://www.threejs.com/">Index: Table of Contents</a></h1>
+
+     <div id="scene-container">
+     <div id="level1"></div>
+
+      <!-- This div will hold our scene-->
+    </div>
+
+    <footer>
+
+      <!--
+        Finally, include the script that
+        runs your three.js app.
+      -->
+
+      <script src="js/app_gltf_newMaterials.js"></script>
+
+    </footer>
+
+  </body>
+</html>
