@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+	<head>
+		<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  new Crate({
+    server: '784273291308564501', // Mindspace
+    channel: '784281152818118656' // #drowning-in-plastic
+  })
+</script>
+		<title>Drowning In Plastic</title>
 
-    <title>Index: Table of Contents</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8" />
+		<link rel="icon" href="https://discoverthreejs.com/favicon.ico" type="image/x-icon">
 
-<!--<link rel="icon" href="https://discoverthreejs.com/favicon.ico" type="image/x-icon"> -->
-
-    <link href="styles/main.css" rel="stylesheet" type="text/css">    <!--
+		<link href="styles/main.css" rel="stylesheet" type="text/css">
+    <!--
 
       Include the main three.js script.
 
@@ -18,49 +24,46 @@
       available for use in any scripts
       loaded after this one.
 
-    -->
+    -->h
 
-    <script src="js/THREE.js-master/build/three.min.js"></script>
+    <script src="js\three.js"></script>
+
     <!--
 
-    Include the OrbitControls script.
+      Include the OrbitControls script.
 
-    This must be included AFTER the three.js script as it
-    needs to use the global THREE variable
+      This must be included AFTER the three.js script as it
+      needs to use the global THREE variable
 
-  -->
+    -->
 
-  <script src="js/THREE.js-master/src/examples/js/loaders/GLTFLoader.js"></script>
-  <!--
+    <script src="js\OrbitControls.js"></script>
 
-    Include the GLTFLoader script. This also needs to be loaded after the three.js script
+		<!--
 
-  -->
+			Include the GLTFLoader script. This also needs to be loaded after the three.js script
 
-  <script src="js/THREE.js-master/src/examples/js/controls/OrbitControls.js"></script>
+		-->
 
-  </head>
+		<script src="js/GLTFLoader.js"></script>
 
-  <body>
+	</head>
 
-    <h1><a href="https://www.threejs.com/">Index: Table of Contents</a></h1>
+	<body>
 
-     <div id="scene-container">
-     <div id="level1"></div>
+		<h1 class="title"><a href="DrowningInPlastic.github.io">Discoverthreejs.com</a> - Drowning In Plastic</h1>
 
-      <!-- This div will hold our scene-->
-    </div>
+		<div id="scene-container">
+			<!-- This div will hold our scene-->
+		</div>
 
-    <footer>
+		<!--
+			Finally, include the script that
+			runs your three.js app.
+		-->
 
-      <!--
-        Finally, include the script that
-        runs your three.js app.
-      -->
+		<script src="js\DrowningInPlastic.js"></script>
 
-      <script src="js/app_gltf_newMaterials.js"></script>
+	</body>
 
-    </footer>
-
-  </body>
 </html>
